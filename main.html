@@ -1,0 +1,124 @@
+<!-- This line is an HTML comment. -->
+<!-- Coments help PEOPLE read code. They are ignored by the computer. You should use comments to leave notes for yourself (and anyone else who might read your code later). -->
+
+<!-- The <head> element contains information that won't be displayed on the page. -->
+<!DOCTYPE html>
+<html>
+	<head>
+	  <!-- The <title> element normally sets the name of the browser tab (but in this example codepen's title overrides the title I set) -->
+	  <title>IPND - Class Notes</title>
+	  <link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<div class="page-title-container">
+			<h1>Intro-to-Programming Nanodegree<br>Class Notes</h1>
+		</div>
+		<div class="lesson-container">
+			<h2 class="lesson-title">Lesson 1: The Basics of the Web and HTML</h2>
+			<div class="concept-container">
+				<h3 class="concept-title">The Web</h3>
+				<p>Collection of html docs linked by Hyperlinks.</p>
+				<p>When internet started it had 30Billion pages</p>
+			</div>
+			<div class="concept-container">
+				<h3 class="concept-title">Browser</h3>
+				<p>
+				<b>Browser <-> HTTP <-> Internet <-> HTTP <-> Servers</b>
+				</p>
+			</div>
+			<div class="concept-container">
+				<h3 class="concept-title">HTML</h3>
+					<p>
+						-Text - <b>Content</b><br>
+						-Markup <b>(what it looks like)</b>
+					</p>
+				<br>
+			</div>
+			<div class="concept-container">
+				<h3 class="concept-title">Tags (opening/closing) or Elements</h2>
+				<p>
+					There are different types of tags
+					<b> bold </b><br>
+					<em> emphasis </em> makes it italic <br>
+				</p>		
+				<p><b>Note:</b> An unclosed tag will make changes in the entire page</p>
+			</div>
+			<div class="concept-container">
+				<h3 class="concept-title">Attributes</h3>
+				<p>These are values added to specific tags</p>
+				<p>
+				Examples:<br><br>
+				<b>Anchor tag</b><br>
+				< a > - "anchor". Used to create links<br>
+				Example: This is <a href=“http://www.udacity.com”>my favorite</a> site<br><br>
+				<b>Image tag</b><br>
+				< img > - image tag<br>
+				Example: <img src=images/kid-goku.png alt=“goku” style="height:50px; width: 50px;"><br><br>
+				When using the 'alt' tag, the specified text will show if image does not load<br>
+				</p>
+			</div>	
+			<div class="concept-container">
+				<h3 class="concept-title">span vs div</h3>
+					<p>- span tags are inline</p>
+					<p>- div tags are blocks</p>
+				<p><b>The 'head' tag has meta-data, JS, CSS, and the title<br>
+				Most of our work will be done on the body of the doc</b></p>
+			</div>
+		</div>  
+		<div class="lesson-container">
+			<h2 class="lesson-title">Lesson 2: Creating a Structured Document with HTML</h2>
+			<div class="concept-container">
+				<h3 class="concept-title">Developer Tools</h3>
+				<p>
+					Everything in a web page is inside a <b>box</b>!<br>
+					Devs first envision the page as a group of boxes, some nested inside others.
+				</p>
+			</div>
+			<div class="concept-container">
+				<h3 class="concept-title">The <em>Tree</em> structure of HTML</h3>
+				<p>
+					This means that these "boxes" can be inside others, to keep the page organized and grouped by relationships. We use the <em>div</em> tag to create this boxes.
+				</p>
+			</div>
+			<div class="concept-container">
+				<h3 class="concept-title">Indentation in HTML</h3>
+				<p>
+					The indentation can be seen on the left of the html code. This shows the nesting happening among these boxes.
+				</p>
+			</div>
+			<div class="concept-container">
+				<h3 class="concept-title">Text Editors</h3>
+				<p>
+					There are many ways to write code, even TextEdit on Mac OS or notepad on Windows, but there are some editors that aid programmers during the writing code process, but autocompleting your html tags and closing them. Putting colors to differnt types of text, to easily identify them.
+				</p>
+				<p>
+					The best editors out there are Sublime Text, TextMate or online tools like Scratchpad or Codepen.
+				</p>
+			</div>
+		</div>
+		<div class="lesson-container">
+			<h2 class="lesson-title">Lesson 3: Adding CSS to your HTML structure</h2>
+			<div class="concept-container">
+				<h3 class="concept-title">Avoiding Repetition</h3>
+				<p>
+					When giving all the style to the page. We can do it in a very efficient way, by avoiding repeating the code for similar elements in the page.
+				</p>
+				<p>
+					This is accomplished by organizing our elements in the html structure, and grouping similar elements under the same type (class), so we can style them all at the same time, in an identical way.
+				</p>
+			
+			</div>
+			<div class="concept-container">
+				<h3 class="concept-title">CSS: Cascading Style Sheet</h3>
+				<p>
+					CSS defines the style for the html document, and this is done by adding this style to specific classes that have been defined in the html document.<br>
+					<b>For example</b>:<br>
+					All headers (h{1..6}) in a document can have a different styles if they were assigned different class names.
+				</p>
+				<p>
+					Also, CSS class attributes are inherited to the elements contained in it, and only overriden if there is a class definition more specific to that element.
+				</p>
+			</div>
+		</div>
+	</body>
+</html>
